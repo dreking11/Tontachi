@@ -7,14 +7,17 @@ import networkButton from "../Images/Network.png";
 import barback from "../Images/Playbar.png";
 import barback1 from "../Images/Htpbar.png";
 import "../App.css";
-import { Label } from "reactstrap";
+import Navbar from "../Components/Navbar"
+import "../Components/Navbar.css"
+
+import { Button, Label } from "reactstrap";
 
 const Home = () => {
   return (
     <div className="background">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md">
+          <div className="col">
             <img
               className="tontachiLogo"
               src={tontachiLogo}
@@ -26,20 +29,21 @@ const Home = () => {
               left="43"
             />
           </div>
+          <Navbar/>
         </div>
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
-            <div className="col-md d-flex justify-content">
+            <div className="col d-flex justify-content ">
               <img
                 className="barback"
                 src={barback1}
                 alt="barback1"
                 class="float-left"
                 class="center"
-                position="center"
-                top="20"
-                left="43"
-              />
+                position="left"
+                height="129"
+                width="441"
+              /> 
               <img
                 className="handphone"
                 src={handphone}
@@ -47,9 +51,8 @@ const Home = () => {
                 alt="handphone"
                 class="center"
                 position="center"
-                top="100"
-                sticky="top"
-                left="43"
+                height="389"
+                width="242"   
               />
               <img
                 className="barback"
@@ -57,39 +60,45 @@ const Home = () => {
                 alt="barback"
                 class="float-right"
                 class="center"
-                position="center"
-                top="20"
-                left="43"
-              />
+                position="right"
+                height="129"
+                width="441"
+               />
             </div>
           </div>
-        </div>
+          </div>
         <div className="row">
-          <div className="col-md d-flex justify-content pb-5">
-            <a href="https://discord.gg/QYH8sqTmRw" target="_blank">
-              <img
-                className="socialMediaLink"
-                src={networkButton}
-                id="networkButton"
-                alt="networkButton"
-              />
-            </a>
-            <a href="https://discord.gg/QYH8sqTmRw" target="_blank">
-              <img
-                className="socialMediaLink"
-                src={discorbButton}
-                id="discorbButton"
-                alt="discorbButton"
-              />
-            </a>
-            <a href="https://twitter.com/tontachiAR" target="_blank">
-              <img
-                className="socialMediaLink"
-                src={twitterButton}
-                id="twitterButton"
-                alt="twitterButton"
-              />
-            </a>
+          <div className="col d-flex justify-content pb-5">
+            <div className="row m-4">
+              <a href="https://discord.gg/QYH8sqTmRw" target="_blank">
+                <img
+                  className="socialMediaLink"
+                  src={networkButton}
+                  id="networkButton"
+                  alt="networkButton"
+                />
+              </a>
+            </div>
+            <div className="row m-4">
+              <a href="https://discord.gg/QYH8sqTmRw" target="_blank">
+                <img
+                  className="socialMediaLink"
+                  src={discorbButton}
+                  id="discorbButton"
+                  alt="discorbButton"
+                />
+              </a>
+            </div>
+            <div className="row m-4">
+              <a href="https://twitter.com/tontachiAR" target="_blank">
+                <img
+                  className="socialMediaLink"
+                  src={twitterButton}
+                  id="twitterButton"
+                  alt="twitterButton"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

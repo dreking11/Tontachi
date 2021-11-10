@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Market from "./Pages/Marketplace";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar"
+import "./Components/Navbar.css"
 
 
 

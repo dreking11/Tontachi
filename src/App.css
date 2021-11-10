@@ -1,14 +1,20 @@
+
 .App {
   text-align: center;
 }
 
 .center{
   text-align: center;
-    display: block;
+    display:inline-block;
     justify-content: center;
     align-items: center;
     margin: auto;
     width: 40%;
+}
+
+div.container {
+  align-items: flex-start;
+  margin-left: 1cm;
 }
 
 .background {
@@ -51,18 +57,15 @@ img.socialMediaLink {
   justify-content: center;
   float: center;
   margin-right: 100%;
+  
 }
 
-img.handphone {
-  max-width: 100px;
-  max-height: 100px;
-  height: 115;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  float: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+img.center {
+  margin-block-end: auto;
+}
+
+img#handphone.center {
+  height: 650;
 }
 
 
