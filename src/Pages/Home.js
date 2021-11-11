@@ -7,8 +7,8 @@ import networkButton from "../Images/Network.png";
 import barback from "../Images/Playbar.png";
 import barback1 from "../Images/Htpbar.png";
 import "../App.css";
-import Navbar from "../Components/Navbar"
-import "../Components/Navbar.css"
+import Navbar from "../Components/Navbar";
+import "../Components/Navbar.css";
 
 import { Button, Label } from "reactstrap";
 
@@ -23,13 +23,12 @@ const Home = () => {
               src={tontachiLogo}
               id="tontachiLogo"
               alt="tontachiLogo"
-              height="265"
-              width="265"
+              width="256"
               top="20"
               left="43"
             />
           </div>
-          <Navbar/>
+          <Navbar />
         </div>
         <div className="container">
           <div className="row">
@@ -38,35 +37,20 @@ const Home = () => {
                 className="barback"
                 src={barback1}
                 alt="barback1"
-                class="float-left"
-                class="center"
-                position="left"
-                height="129"
-                width="441"
-              /> 
-              <img
-                className="handphone"
-                src={handphone}
-                id="handphone"
-                alt="handphone"
-                class="center"
-                position="center"
-                height="389"
-                width="242"   
+                class=" mr-auto"
+                width="241px"
               />
+              {/* <img className="handphone" src={handphone} id="handphone" alt="handphone" class="center" position="center" bottom="0" width="400" /> */}
               <img
-                className="barback"
+                className="barback ml-auto"
                 src={barback}
                 alt="barback"
-                class="float-right"
-                class="center"
-                position="right"
-                height="129"
-                width="441"
-               />
+                class=" ml-auto"
+                width="241vh"
+              />
             </div>
           </div>
-          </div>
+        </div>
         <div className="row">
           <div className="col d-flex justify-content pb-5">
             <div className="row m-4">
